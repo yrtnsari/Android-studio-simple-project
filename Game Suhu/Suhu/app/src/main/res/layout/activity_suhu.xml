@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="game.suhu.SuhuActivity"
+    android:background="@drawable/air">
+
+    <ImageView
+    android:layout_width="600dp"
+    android:layout_height="100dp"
+    android:src="@drawable/picture1"
+    android:layout_marginLeft="25dp"/>
+    <TextView
+        android:id="@+id/txtcelius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="120dp"
+        android:text="Celcius"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txtcelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="120dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Masukkan Celcius"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcelcius"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="konversisuhu"
+        android:background="#047777"
+        android:text="CONVERT"
+        android:ems="5"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Fahrenheit"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/txtcelius"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelvin"
+        android:layout_marginTop="300dp"
+        android:layout_alignStart="@+id/textView8"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Reamur"
+        android:layout_below="@+id/txtkelvin"
+        android:layout_alignEnd="@+id/txtcelius"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txtfarenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hasil dalam Fahrenheit"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignStart="@+id/button2"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/txtkelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hasil dalam Kelvin"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignStart="@+id/txtfarenheit"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/txtreamur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Hasil dalam Reamur"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/txtkelvin"
+        android:background="#FFFFFF"/>
+</RelativeLayout>
